@@ -58,7 +58,7 @@ export default function Footer() {
                 </div>
 
                 <div className="flex gap-8 font-hand text-2xl text-[var(--color-leaf)] tracking-wide mb-8">
-                    <a href="#" className="hover:text-[var(--color-sun)] hover:scale-110 hover:-rotate-6 transition-all">Instagram 📸</a>
+                    <a href="https://www.instagram.com/thefamilyadventure.in?igsh=MWNxNWQ5MTlyY3RxOQ==" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-sun)] hover:scale-110 hover:-rotate-6 transition-all">Instagram 📸</a>
                     <a href="#" className="hover:text-[var(--color-sun)] hover:scale-110 hover:rotate-6 transition-all">Facebook 👍</a>
                 </div>
 

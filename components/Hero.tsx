@@ -5,9 +5,6 @@ import Image from 'next/image';
 import FloatingElement from './FloatingElement';
 
 export default function Hero() {
-    const { scrollY } = useScroll();
-    const y = useTransform(scrollY, [0, 500], [0, 200]);
-
     // Mouse tilt
     const x = useMotionValue(0);
     const mouseY = useMotionValue(0);
@@ -24,11 +21,8 @@ export default function Hero() {
 
     return (
         <section
-            className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 overflow-hidden"
+            className="relative min-h-screen flex flex-col items-center justify-center pt-16 pb-12 overflow-hidden bg-[var(--color-paper)]"
             onMouseMove={handleMouseMove}
-            style={{
-                background: 'radial-gradient(circle at 50% 50%, var(--color-paper), #f0efeb)'
-            }}
         >
             {/* Background Doodles (CSS Shapes) */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none -z-10">
@@ -46,11 +40,11 @@ export default function Hero() {
                 </FloatingElement>
             </div>
 
-            <motion.div style={{ y }} className="relative z-10 text-center max-w-4xl px-4">
+            <motion.div className="relative z-10 text-center max-w-4xl px-4">
 
                 {/* Main Logo - Polaroid Style */}
                 <motion.div
-                    className="relative inline-block mb-12"
+                    className="relative inline-block mb-8"
                     style={{ rotateX, rotateY, perspective: 1000 }}
                 >
                     <FloatingElement duration={6} yOffset={10} className="w-fit h-fit">
@@ -90,7 +84,7 @@ export default function Hero() {
                 </motion.h1>
 
                 <motion.p
-                    className="text-xl md:text-2xl font-sans text-stone-600 mb-8 max-w-2xl mx-auto leading-relaxed"
+                    className="text-xl md:text-2xl font-sans text-stone-600 mb-6 max-w-2xl mx-auto leading-relaxed"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.2 }}
