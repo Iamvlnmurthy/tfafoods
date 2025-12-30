@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Family Adventure Palette - Watercolor & Organic */
+    --color-paper: #faf9f6;
+    /* Sketchbook paper */
+    --color-ink: #4b4845;
+    /* Warm charcoal text */
+
+    /* Playful Accents */
+    --color-leaf: #88d498;
+    --color-leaf-dark: #2d6a4f;
+    --color-sun: #ffeaa7;
+    --color-sky: #74b9ff;
+    --color-rose: #ff7675;
+
+    /* Brand Primary */
+    --color-earth: #8d6e63;
+    /* For borders/structure */
+    --color-warm: #ffab91;
+    /* Soft peach/terracotta */
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    /* Subtle paper grain texture */
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+  }
+}
+
+@layer utilities {
+  .font-hand {
+    font-family: var(--font-hand), cursive;
+  }
+
+  .text-shadow-notebook {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Wobbly/Hand-drawn borders */
+  .border-sketch {
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    border: 2px solid var(--color-ink);
+  }
+
+  .rotate-slight {
+    transform: rotate(-1deg);
+  }
+}
