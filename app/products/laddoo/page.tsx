@@ -66,9 +66,9 @@ export default function LaddooProductPage() {
                                 <span className="text-stone-400 text-sm ml-1">(120+ reviews)</span>
                             </div>
                             <h1 className="text-4xl md:text-6xl font-hand mb-4 leading-tight text-stone-800">
-                                Grandma's Dryfruit <br /><span className="text-[var(--color-leaf-dark)]">Power Balls</span>
+                                My Mom's Dryfruit <br /><span className="text-[var(--color-leaf-dark)]">Power Balls</span>
                             </h1>
-                            <p className="text-2xl font-bold text-stone-700"><span className="text-2xl font-hand text-[var(--color-earth)]">Starts at ₹300</span></p>
+                            <p className="text-2xl font-bold text-stone-700"><span className="text-2xl font-hand text-[var(--color-earth)]">Starts at ₹399</span></p>
                         </div>
 
                         <p className="text-lg text-stone-600 leading-relaxed border-l-4 border-[var(--color-sun)] pl-4">

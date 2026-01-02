@@ -53,7 +53,7 @@ export default function ProductShowcase() {
                     <div className="flex gap-3 flex-wrap font-hand text-2xl">
                         <span className="bg-white border-2 border-[var(--color-leaf)] px-4 py-1 rounded-full text-[var(--color-leaf-dark)] rotate-1">Loaded with Nuts</span>
                         <span className="bg-white border-2 border-[var(--color-rose)] px-4 py-1 rounded-full text-[var(--color-rose)] -rotate-1">Pure Ghee</span>
-                        <span className="bg-white border-2 border-[var(--color-sky)] px-4 py-1 rounded-full text-[var(--color-sky)] rotate-2">Grandma's Style</span>
+                        <span className="bg-white border-2 border-[var(--color-sky)] px-4 py-1 rounded-full text-[var(--color-sky)] rotate-2">My Mom's Style</span>
                     </div>
 
                     <div className="mt-8 flex gap-4">

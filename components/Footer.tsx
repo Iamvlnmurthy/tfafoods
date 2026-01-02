@@ -12,7 +12,7 @@ export default function Footer() {
                         <div className="space-y-2 text-[var(--color-paper)]/90">
                             <p className="flex items-start gap-2">
                                 <span className="text-2xl">📍</span>
-                                <span>Plot no 153, Venkatrao Nagar Colony,<br />Road No 4, Kukkatpally, Medchal</span>
+                                <span>Venkatrao Nagar Colony,<br />Kukkatpally, Medchal</span>
                             </p>
                             <p className="flex items-center gap-2">
                                 <span className="text-2xl">📞</span>
@@ -34,7 +34,7 @@ export default function Footer() {
                                 width="100%"
                                 height="100%"
                                 style={{ minHeight: "200px", border: 0 }}
-                                src="https://maps.google.com/maps?q=Plot+no+153+Venkatrao+nagar+Colony+Road+no4+kukkatpally+Medchal&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                src="https://maps.google.com/maps?q=Venkatrao+nagar+Colony+kukkatpally+Medchal&t=&z=15&ie=UTF8&iwloc=&output=embed"
                                 allowFullScreen
                             ></iframe>
                         </div>
@@ -59,7 +59,7 @@ export default function Footer() {
 
                 <div className="flex gap-8 font-hand text-2xl text-[var(--color-leaf)] tracking-wide mb-8">
                     <a href="https://www.instagram.com/thefamilyadventure.in?igsh=MWNxNWQ5MTlyY3RxOQ==" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-sun)] hover:scale-110 hover:-rotate-6 transition-all">Instagram 📸</a>
-                    <a href="#" className="hover:text-[var(--color-sun)] hover:scale-110 hover:rotate-6 transition-all">Facebook 👍</a>
+                    <a href="https://youtube.com/@bhavanankith?si=xtveCFLWDrXDXG2H" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--color-sun)] hover:scale-110 hover:rotate-6 transition-all">YouTube 🎥</a>
                 </div>
 
                 <div className="w-full border-t border-[var(--color-ink)]/30 pt-4 text-sm text-[var(--color-paper)]/60 font-hand tracking-widest">

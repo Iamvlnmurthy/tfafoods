@@ -10,9 +10,9 @@ interface OrderModalProps {
 }
 
 const PACKAGES = [
-    { id: 'small', weight: '250gms', price: 300 },
-    { id: 'medium', weight: '500gms', price: 600 },
-    { id: 'large', weight: '1Kg', price: 1200 },
+    { id: 'small', weight: '250gms', price: 399 },
+    { id: 'medium', weight: '500gms', price: 798 },
+    { id: 'large', weight: '1Kg', price: 1596 },
 ];
 
 export default function OrderModal({ isOpen, onClose }: OrderModalProps) {
