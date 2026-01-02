@@ -21,7 +21,7 @@ export default function ProductShowcase() {
                 </svg>
             </div>
 
-            <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
 
                 {/* Text */}
                 <motion.div
@@ -72,7 +72,7 @@ export default function ProductShowcase() {
                 </motion.div>
 
                 {/* Real Image Visual */}
-                <div className="relative h-[400px] md:h-[600px] flex items-center justify-center">
+                <div className="relative aspect-square md:h-[600px] flex items-center justify-center">
 
                     {/* The Basket */}
                     <FloatingElement duration={6} yOffset={25} className="relative z-20 w-fit h-fit">

@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import FloatingElement from './FloatingElement';
 
 export default function Hero() {
@@ -93,13 +94,15 @@ export default function Hero() {
                     Just <b className="text-[var(--color-rose)]">Mom's recipe</b>, Dad's packing, and a whole lot of love.
                 </motion.p>
 
-                <motion.button
-                    whileHover={{ scale: 1.05, rotate: -1 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="px-8 py-4 bg-[var(--color-ink)] text-[var(--color-paper)] font-hand text-2xl rounded-full shadow-lg border-2 border-[var(--color-paper)] ring-2 ring-[var(--color-ink)] hover:bg-[var(--color-leaf-dark)] transition-colors"
-                >
-                    Grab a Box of Joy!
-                </motion.button>
+                <Link href="/products/laddoo">
+                    <motion.button
+                        whileHover={{ scale: 1.05, rotate: -1 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="px-8 py-4 bg-[var(--color-ink)] text-[var(--color-paper)] font-hand text-2xl rounded-full shadow-lg border-2 border-[var(--color-paper)] ring-2 ring-[var(--color-ink)] hover:bg-[var(--color-leaf-dark)] transition-colors"
+                    >
+                        Grab a Box of Joy!
+                    </motion.button>
+                </Link>
 
             </motion.div>
         </section>
