@@ -15,7 +15,7 @@ export default function ComingSoon() {
                 transition={{ duration: 0.8 }}
                 className="relative z-10 w-full max-w-2xl mx-4 text-center"
             >
-                <h3 className="text-6xl md:text-8xl font-hand text-[var(--color-ink)] mb-4 rotate-2">
+                <h3 className="text-4xl md:text-8xl font-hand text-[var(--color-ink)] mb-4 rotate-2">
                     Caution: <span className="text-[var(--color-rose)]">Flour Explosion!</span>
                 </h3>
 

@@ -20,7 +20,7 @@ export default function LaddooProductPage() {
                 </Link>
             </nav>
 
-            <div className="container mx-auto px-6 py-24 lg:py-32">
+            <div className="container mx-auto px-6 py-16 lg:py-32"> {/* Reduced mobile padding */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
                     {/* Product Image Section */}
@@ -65,7 +65,7 @@ export default function LaddooProductPage() {
                                 <Star className="w-5 h-5 fill-current" />
                                 <span className="text-stone-400 text-sm ml-1">(120+ reviews)</span>
                             </div>
-                            <h1 className="text-5xl md:text-6xl font-hand mb-4 leading-tight text-stone-800">
+                            <h1 className="text-4xl md:text-6xl font-hand mb-4 leading-tight text-stone-800">
                                 Grandma's Dryfruit <br /><span className="text-[var(--color-leaf-dark)]">Power Balls</span>
                             </h1>
                             <p className="text-2xl font-bold text-stone-700"><span className="text-2xl font-hand text-[var(--color-earth)]">Starts at ₹300</span></p>

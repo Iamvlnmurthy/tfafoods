@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <footer className="bg-[var(--color-ink)] py-12 text-[var(--color-paper)] font-sans relative overflow-hidden border-t-8 border-[var(--color-warm)]">
             <div className="container mx-auto px-6 flex flex-col items-center text-center">
-                <h4 className="text-5xl font-hand mb-2 text-[var(--color-sun)] rotate-slight hover:scale-105 transition-transform cursor-pointer">The Family Adventure</h4>
+                <h4 className="text-3xl md:text-5xl font-hand mb-2 text-[var(--color-sun)] rotate-slight hover:scale-105 transition-transform cursor-pointer">The Family Adventure</h4>
                 <p className="text-[var(--color-warm)] font-hand text-xl mb-12">Baked with ❤️, chaos, and a whole lot of love.</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full max-w-6xl mb-12 text-left">

@@ -21,7 +21,7 @@ export default function Hero() {
 
     return (
         <section
-            className="relative min-h-screen flex flex-col items-center justify-center pt-16 pb-12 overflow-hidden bg-[var(--color-paper)]"
+            className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-12 overflow-hidden bg-[var(--color-paper)]" // Increased top padding for mobile navbar clearance
             onMouseMove={handleMouseMove}
         >
             {/* Background Doodles (CSS Shapes) */}
@@ -49,7 +49,7 @@ export default function Hero() {
                 >
                     <FloatingElement duration={6} yOffset={10} className="w-fit h-fit">
                         <div className="relative bg-white p-4 pb-16 shadow-[2px_4px_12px_rgba(0,0,0,0.1)] transform rotate-[-2deg] hover:rotate-0 transition-transform duration-500 border border-gray-100">
-                            <div className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden border-2 border-gray-100">
+                            <div className="relative w-56 h-56 md:w-80 md:h-80 overflow-hidden border-2 border-gray-100"> {/* Reduced mobile size */}
                                 <Image
                                     src="/hero-family.jpg"
                                     alt="The Family Adventure"
@@ -75,7 +75,7 @@ export default function Hero() {
                 </motion.div>
 
                 <motion.h1
-                    className="text-6xl md:text-8xl font-hand font-bold text-[var(--color-ink)] mb-4 text-shadow-notebook"
+                    className="text-4xl md:text-8xl font-hand font-bold text-[var(--color-ink)] mb-4 text-shadow-notebook" // Reduced mobile text size
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                 >

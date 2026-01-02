@@ -35,7 +35,7 @@ export default function ProductShowcase() {
                         ⭐ Healthy & Wholesome
                     </div>
 
-                    <h2 className="text-6xl md:text-8xl font-hand text-[var(--color-ink)] mb-6 leading-[0.8]">
+                    <h2 className="text-4xl md:text-8xl font-hand text-[var(--color-ink)] mb-6 leading-[0.8]">
                         A Basket Full of <br />
                         <span className="text-[var(--color-leaf-dark)] pl-8">Goodness</span>
                     </h2>
@@ -72,17 +72,17 @@ export default function ProductShowcase() {
                 </motion.div>
 
                 {/* Real Image Visual */}
-                <div className="relative h-[600px] flex items-center justify-center">
+                <div className="relative h-[400px] md:h-[600px] flex items-center justify-center">
 
                     {/* The Basket */}
                     <FloatingElement duration={6} yOffset={25} className="relative z-20 w-fit h-fit">
                         <div className="relative group perspective-[1000px]">
-                            <Link href="/products/laddoo" className="cursor-pointer block relative w-[350px] h-[350px] md:w-[450px] md:h-[450px] transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1">
+                            <Link href="/products/laddoo" className="cursor-pointer block relative w-[280px] h-[280px] md:w-[450px] md:h-[450px] transition-transform duration-500 group-hover:scale-105 group-hover:rotate-1"> {/* Adjusted mobile width */}
                                 <Image
                                     src="/images/laddoo-delight.png"
                                     alt="Basket of Dryfruit Laddoos"
                                     fill
-                                    sizes="(max-width: 768px) 350px, 450px"
+                                    sizes="(max-width: 768px) 280px, 450px"
                                     className="object-contain drop-shadow-2xl"
                                     priority
                                 />
