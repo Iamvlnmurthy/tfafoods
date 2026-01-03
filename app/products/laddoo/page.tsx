@@ -115,7 +115,7 @@ export default function LaddooProductPage() {
                                 </p>
                             </div>
                         </div>
-                        <OrderModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+
 
                         <div className="mt-8 pt-8 border-t border-stone-100">
                             <h3 className="font-hand text-2xl mb-4">What's Inside?</h3>
@@ -130,6 +130,7 @@ export default function LaddooProductPage() {
 
                     </motion.div>
                 </div>
+                <OrderModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             </div>
         </main>
     );

@@ -3,19 +3,20 @@ import nodemailer from 'nodemailer';
 
 export async function POST(request: Request) {
     try {
-        const { name, mobile, quantity, price } = await request.json();
+        const { name, mobile, email, quantity, price } = await request.json();
 
         // Basic validation
-        if (!name || !mobile || !quantity || !price) {
+        if (!name || !mobile || !email || !quantity || !price) {
             return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
         }
 
-        console.log('Received order:', { name, mobile, quantity, price });
+        console.log('Received order:', { name, mobile, email, quantity, price });
 
         // Email Configuration
         // In a real application, these should be environment variables.
         const user = process.env.GMAIL_USER;
         const pass = process.env.GMAIL_PASS;
+        const receiver = process.env.RECEIVER_EMAIL || 'info.thefamilyadventure@gmail.com';
 
         if (user && pass) {
             const transporter = nodemailer.createTransport({
@@ -28,7 +29,8 @@ export async function POST(request: Request) {
 
             const mailOptions = {
                 from: user,
-                to: 'info.thefamilyadventure@gmail.com', // Site owner email
+                to: receiver, // Site owner email
+                replyTo: email,
                 subject: `New Order Received from ${name}`,
                 html: `
                     <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #eee; padding: 20px; border-radius: 8px;">
@@ -39,8 +41,9 @@ export async function POST(request: Request) {
                             <h3 style="margin-top: 0; color: #8d6e63;">Customer Details</h3>
                             <p><strong>Name:</strong> ${name}</p>
                             <p><strong>Mobile:</strong> <a href="tel:${mobile}">${mobile}</a></p>
+                            <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
                         </div>
-
+                        
                         <div style="background-color: #fff3e0; padding: 15px; border-radius: 8px; margin: 20px 0;">
                             <h3 style="margin-top: 0; color: #e67e22;">Order Details</h3>
                             <p><strong>Item:</strong> Dryfruit Laddoo</p>

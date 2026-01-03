@@ -10,7 +10,7 @@ import OrderModal from './OrderModal';
 export default function ProductShowcase() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     return (
-        <section className="min-h-screen py-24 relative overflow-hidden flex items-center justify-center bg-[#fffefc]">
+        <section className="min-h-screen py-12 md:py-24 relative overflow-hidden flex items-center justify-center bg-[#fffefc]">
             {/* Background Scribbles */}
             <div className="absolute inset-0 pointer-events-none -z-10 opacity-30">
                 <svg className="absolute top-20 left-10 w-64 h-64 text-[var(--color-sun)]" viewBox="0 0 200 200">
@@ -68,8 +68,8 @@ export default function ProductShowcase() {
                         </button>
                     </div>
 
-                    <OrderModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
                 </motion.div>
+                <OrderModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
                 {/* Real Image Visual */}
                 <div className="relative aspect-square md:h-[600px] flex items-center justify-center">
